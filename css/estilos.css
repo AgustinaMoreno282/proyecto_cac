@@ -1,0 +1,462 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*seccion header*/
+
+header{
+    position: fixed;
+    width: 100%;
+}
+.header_flex{
+    background-color: rgb(52,58,64);
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 5rem;
+}
+.imagen_logo{
+    width: 20%;
+    
+}
+.navegador{
+    padding-right: 5rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bgColorGris{
+    background-color: rgb(52,58,64);
+}
+.imgCodoAcodo{
+   
+    padding-left: 3rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    
+    align-items: center;
+  
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.link3{
+    padding-left: 20rem;
+   display: flex;
+   align-items: center; 
+}
+
+/*SECCION PRINCIPAL*/
+.imagenBsAs{
+    width: 100%;
+}
+.contenidoPrincipal{
+background-image:linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)),url("../assets/imagenes/ba1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.contenidoImagenBsAs{
+width: 60%;
+text-align: right;
+color: white;
+padding-right: 8%;
+}
+h1{
+    padding-bottom: 2%;
+
+}
+.parrafoPrincipal{
+    padding-bottom: 5%;
+}
+.link2{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    padding:1%;
+    
+
+}
+.tickets{
+background-color: rgb(41, 167, 68);
+border: 0;
+}
+/* SECCION DIVIDIDA*/
+
+.pantallaDividida{
+    display: flex;
+    height: 70vh;
+}
+
+.imagenHonolulu{
+   height: 100%;
+    width: 50%;
+    background-image: url("../assets/imagenes/honolulu.jpg") ;
+     background-size: cover;
+}
+.contenidoDerecha{
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+/*SECCION TARJETAS*/
+
+.tarjetas_oradores{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 3%;
+}
+.padreTarjetas{
+width: 100%;
+display: flex ;
+justify-content: center;
+align-items: center;
+}
+.tarjetas_flex{
+ width: 80%; 
+ display: flex;
+justify-content: space-between;
+ 
+}
+.tarjetas{
+    background-color: white;
+    width:30% ;
+    border: 1px solid rgba(128, 122, 122, 0.63);
+    border-radius: 10px;
+}
+.imagenTarjeta{
+    width: 100%;
+    border-radius: 10px;
+}
+.contenidoDeTarjetas{
+    padding: 1rem;
+}
+.contImagen{
+    display: inline;
+    padding: 3px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.parrafoTarjetas{
+    width: 80%;
+}
+.titulos{
+    padding-bottom: 2px;
+    padding-top: 2%;
+    text-align: center;
+    margin: 0 auto;
+}
+.titulouno{
+    color: rgb(33, 34, 34);
+    font-size: 12px; 
+    
+}
+/*seccion formulario*/
+.ancho{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+.botonEnviar{
+    text-align: center;
+    background-color: rgb(150,201,62);
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem; 
+    font-size: 1rem; 
+    margin-bottom: 2%;   
+}
+.btnEnvio{
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75;
+     
+}
+.parrafoForm{
+    font-size: 13px;
+    color: #666161;
+}
+/*FOOTER*/
+footer{
+    background-color: rgb(29, 60, 78);
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 40px;
+}
+.linkfooter{
+  text-decoration: none;
+  color: rgb(249, 255, 253);
+}
+.tarjetitas{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+    margin: 0.5%;
+   
+  }
+  .tarjeta_padre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;   
+  }
+  .tarjetas_bordes {
+     background-color: rgb(255, 255, 255);
+     width:15% ;
+     border-radius: 1.5px;
+     margin-left: 1%;
+  }
+  .tarjeta_estudiante{
+    border-radius: 5px;
+    border: 2px solid rgb(13, 110,253);
+  }
+  .tarjeta_trainee{
+    border-radius: 5px;
+    border: 2px solid rgb(13, 202, 240);
+    
+  }
+  .tarjeta_junior{
+    border-radius: 5px;
+    border: 2px solid rgb(255, 193, 7);
+
+  }
+ .titulo_estudiante{
+    background-color: rgb(13, 110,253);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(13, 110,253);   
+ }
+ .titulo_trainee{
+    background-color: rgb(13, 202,240);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(13, 202,240);  
+ }
+ .titulo_junior{
+    background-color: rgb(255, 193,7);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 193,7);  
+ }
+ 
+  .textoCaja{
+    font-size: 12px;
+    color: #a7a7a7;
+  }
+  
+  .tituloFormulario{
+   text-align: center;
+   padding-top: 3px;
+  }
+  .form{
+    padding-left: 1.5%;
+    padding-right: 8px;
+  }
+  .formularioCorreo{
+    padding-right: 26.3%;
+    padding-left: 27.1%;
+  }
+  .cantidad_categoria{
+    justify-content: center;
+    padding-left: 26.8%;
+    padding-right: 26%;
+  }
+  .textoPago{
+    padding-left: 26.9%;
+    padding-right: 5px;
+  }
+  .anchoPago{
+    align-items: center;
+    background-color: rgb(204, 229,255);
+    color: rgb(0,64,149);
+    width: 64.5%;
+    border-radius: 5px;
+    padding: 9px;
+    
+  }
+
+  .botones{
+    display: flex;
+    border-radius: 3px;
+    padding-left: 26.9%;
+    padding-right: 5;
+  }
+  .btn_byr{
+    background-color:rgb(150, 201, 62);
+    width: 31.8%;
+    color: white;
+  }
+  .disenio_footer{
+     padding: 1%;
+  }
+  
+
+@media screen and (max-width: 900px){
+  /*CONTENIDO HEADER*/ 
+  header{
+    width: 100%;
+  }
+.header_flex{
+    flex-direction: column;
+}
+.logo{
+    width: 100%;
+    justify-content: left;
+    padding-left: 0;
+}
+.navegador{
+    width: 100%;
+    flex-direction: column;
+}
+.link3{
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;   
+}
+ /*esta es la seccion principal de la pagina*/
+
+.contenidoPrincipal{
+    justify-content: center;
+}
+.parrafoPrincipal{
+    line-height: 1.5rem;
+}
+.contenidoImagenBsAs{
+    width: 80%;
+    text-align: center;
+  /* backdrop-filter: blur(5px);*/
+  padding-right: 0;
+  
+}
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+.linkBsAs{
+    display: inline-block;
+    margin: 1%;
+}
+
+/*esta es la seccion de las tarjetas*/
+.tarjetas_flex{
+    flex-direction: column;
+}
+.tarjetas{
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: -4px -4px 30px 6px rgba(27, 27, 27, 0.64);
+    -webkit-box-shadow: -4px -4px 30px 6px rgba(27,27,27,0.64);
+    -moz-box-shadow:-4px -4px 30px 6px rgba(27,27,27,27.64);
+}
+
+/*SECCION PANTALLA DIVIDIDA*/
+.pantallaDividida{
+    flex-direction: column;
+   height: 100vh;   
+    
+}
+.imagenHonolulu{
+  
+ width:  100%;
+
+}
+.contenidoDerecha{
+  
+  width: 100%;
+  padding-top: 7vh;
+  font-size: 1rem;
+  
+}
+/*seccion formulario*/
+.ancho{
+    width: 90%;
+   
+}
+
+/*Footer*/
+
+footer{
+    flex-direction: column;
+    width: 100%;
+}
+.linkfooter{ 
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+.tarjetas_bordes {
+    background-color: rgb(255, 255, 255);
+    width: 50% ;
+    border-radius: 5px;
+    margin: 1%;
+ }
+ .form{
+    padding-left: 1.5%;
+    padding-right: 8px;
+  }
+  .formularioCorreo{
+    padding-right: 11%;
+    padding-left: 10%;
+  }
+  .cantidad_categoria{
+    justify-content: center;
+    padding-left: 9%;
+    padding-right: 11%;
+    
+  }
+
+  .textoPago{
+    padding-left: 9.8%;
+    padding-right:11.3%;
+  }
+  .anchoPago{
+    width: 100%;
+    border-radius: 5px;
+    padding: 9px;
+    
+  }
+  .botones{
+    padding-left: 9.8%;
+    padding-right: 11%;
+  }
+  .btn_byr{
+    width: 100%;
+    margin: 2px;
+  }
+ .cat_cant{
+   width: 50%;
+ }
+  
+
+}
+
+

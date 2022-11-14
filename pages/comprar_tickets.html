@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar tickets</title>
+     <link rel="shortcut icon" href="../favicon.ico">
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     
+     <link rel="stylesheet" href="../css/estilos.css">
+     
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bgColorGris">
+        <div class="container-fluid">
+          <a class=" imgCodoAcodo text-white" href="#">
+            <img src="../assets/imagenes/codoacodo.png" alt="logo" width="100">
+            Conf.Bs.As.
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
+               <div class="link3 ">
+              <li>
+                <a class="nav-link active  text-white pe-4" aria-current="page" href="../index.html">La Conferencia</a>
+              </li>
+                <li class="nav-item "> <a class="nav-link text-muted pe-4" href="#oradores">Los Oradores</a></li>
+                <li class="nav-item"> <a class="nav-link text-muted pe-4" href="#lugarYfecha">El lugar y la fecha</a></li>
+                <li class="nav-item"> <a class="nav-link text-muted pe-4" href="#formulario">Conviertete en Orador</a></li>
+                 <li class="nav-item"> <a class="nav-link text-success pe-4" href="./comprar_tickets.html">Comprar Tickets</a></li>
+              </div>
+            
+
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+  <section class="tarjetitas">
+    <div class="tarjeta_padre">
+      <div class="tarjetas_bordes">
+       <div class="tarjeta_estudiante">
+        <div class="titulo_estudiante">
+          <h3 class="titulo_primero espacio fs-5 m-3 fw-normal">Estudiante</h3>
+        </div> 
+          <h4 class=" espacio fs-6 fw-normal m-2">Tienen un descuento</h4>
+          <h3 class="espacio fs-7 fw-bold m-3">80%</h3>
+          <h4 class="espacio textoCaja m-3">*presentar documentación</h4>
+       </div>
+     </div>
+     <div class="tarjetas_bordes">
+       <div class="tarjeta_trainee">
+        <div class="titulo_trainee">
+          <h3 class="titulo_primero espacio fs-5 m-3 fw-normal">Trainee</h3>
+        </div> 
+          <h4 class="espacio fs-6 fw-normal m-2">Tienen un descuento</h4>
+          <h3 class="espacio fs-7 fw-bold m-3">50%</h3>
+          <h4 class="espacio textoCaja m-3">*presentar documentación</h4> 
+       </div>
+      </div>
+     <div class="tarjetas_bordes">
+        <div class="tarjeta_junior">
+          <div class="titulo_junior">
+            <h3 class="titulo_primero espacio fs-5 m-3 fw-normal">Junior</h3>
+          </div>
+         <h4 class="espacio fs-6 fw-normal m-2">Tienen un descuento</h4>
+         <h3 class="espacio fs-7 fw-bold m-3">15%</h3>
+         <h4 class="espacio textoCaja m-3">*presentar documentación</h4>
+       </div>
+     </div>
+    </div>
+     
+    
+  </section >
+  
+  <section id="formularioTikects" class="disenioForm">
+     <div class="tituloFormulario">
+         <h3 class="fs-6 fw-normal">VENTA</h3>
+         <h3 class="fw-bold">VALOR DE TICKET $200</h3>
+
+     </div>
+   
+     <div class="form col md-8 ">
+         <div class="row ancho">
+          <div class="col mb-3 d-flex ">
+            <input type="text" class="form-control m-1" id="NombreTickets" placeholder="Nombre">
+            <input type="text" class="form-control m-1" id="ApellidoTickets" placeholder="Apellido">
+          </div>
+      </div>
+      </div>
+      
+    <!--<div class="col-md-6    ">
+      <input type="email" class="form-control m-1  " id="colFormLabel" placeholder="Correo">
+    </div>-->
+
+    <div class="formularioCorreo">
+       <div class="col mb-2">
+        <input type="email" class="form-control" id="EmailTickets" placeholder="Email">
+      </div>
+    </div>
+     
+    
+    <div class="col-mb-2 d-flex cantidad_categoria ">
+        <div class="col-sm m-1 cat_cant ">
+          <label for="cantidadTickets" class="form-label">Cantidad</label>
+        <input type="number" class="form-control " id="CantidadTickets" placeholder="Cantidad">
+
+      </div>
+        
+  
+      <div class="col-sm m-1  ">
+         <label class="form-label " for="inputState">Categoria</label>
+        <select class="form-select " id="CategoriaTickets">
+          <option selected value="0">--Seleccione--</option>
+          <option value="1">Estudiante</option>
+          <option value="2">Trainee</option>
+          <option value="3">Junior</option>
+          <option value="4">Sin Categoria</option>
+        </select>
+      </div>
+  
+       </div>
+       <div class="textoPago ">
+         <div class="alert alingn-primary mt-2 mb-3 anchoPago " role="alert">
+        Total a pagar: $ <span id="Pagototal" class="fw-bold alingn-middle"></span>
+        </div>
+       </div>
+
+        <div class="col-sm- m-1 ">
+          <div class=" d-md-block botones">
+            <button type="reset" class="btn btn_byr" id="btnBorrar">"Borrar"</button>
+            <button type="button" class="btn btn_byr"id="btnResumen">Resumen</button>
+          </div>
+        </div>
+      
+        
+  </section>
+    
+  <footer class="disenio_footer mt-3 ">
+    <a class="linkfooter m-2" href="">Preguntas frecuentes</a>
+    <a class="linkfooter m-2" href="">Contáctanos</a>
+    <a class="linkfooter m-2" href="">Prensa</a>
+    <a class="linkfooter m-2" href="">Conferencias</a>
+    <a class="linkfooter m-2" href="">Términos y condiciones</a>
+    <a class="linkfooter m-2" href="">Privacidad</a>
+    <a class="linkfooter m-2" href="">Estudiantes</a>
+    
+  </footer>
+     <script src="../js/comprar_tickects.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
